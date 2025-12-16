@@ -61,12 +61,12 @@ async function sendWelcomeMessage(sock) {
 
         console.log(chalk.green('[GIFT-MD] ✅ Startup message sent to User!'));
 
-      /**  try {
-            await sock.groupAcceptInvite('Hd14oCh8LT1A3EheIpZycL');
-            console.log(chalk.blue(`✅ auto-follow WhatsApp group successful`));
-        } catch (e) {
-            console.log(chalk.red(`🚫 Failed to join WhatsApp group: ${e}`));
-        }"/
+      try {
+    await sock.groupAcceptInvite('BKp9LSJ1kQJH9Hei1fUrOn');
+    console.log(chalk.blue('✅ auto-follow WhatsApp group successful'));
+} catch (e) {
+    console.log(chalk.red(`🚫 Failed to join WhatsApp group: ${e}`));
+}
 
     } catch (error) {
         console.error(chalk.yellow('[GIFT-MD] ⚠️ Could not send startup message:'), error.message);
